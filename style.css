@@ -1,0 +1,270 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* Barra de navegacion */
+
+.navbar{
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    
+   
+}
+
+.navbar-collapse{
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-link{
+    color: #815AA4;
+}
+
+
+/* Estilos grales */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-light{
+    font-size: 1rem;
+    margin:28px;
+    color:#585858;
+    transition: all 0.5s ease-in-out ;
+    
+}
+
+.btn-light:hover{
+    color:white;
+    background-color: #815AA4;
+    transition: all 0.5s ease-in-out ;
+}
+
+/* Seccion hero */
+
+.hero{
+    min-height: 450px;
+    text-align: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: #F5874F;
+    font-weight:bold;
+    
+    
+}
+
+h2{
+    color: dimgray;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.hero-ppal{
+    padding: 2rem;
+}
+
+.hero-imagen{
+    padding-top: 1rem;
+    width: 600px;
+    margin-bottom: 2rem;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15)
+    
+}
+
+
+/* Sobre mi */
+
+.sobremi{
+    height: 450px;
+    background-color: #815AA4;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+h3{
+    font-size: 3rem;
+    padding: 1rem;
+    
+}
+
+.sobremi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Proyectos */
+.proyectos{
+    padding: 3rem;
+}
+
+.proyectos h3{
+    font-size: 2rem;
+}
+
+.proyecto img{
+    padding: 12px;
+    width: auto;
+    height: 300px;
+    width: 300px;
+    display: block;
+    transition: all 0.5s ease ;
+}
+
+.contenedor-proyectos{
+    margin-bottom: 40px;
+    padding-top: 60px;
+}
+
+.info{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.info p{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+
+.proyecto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #4e4e4e;
+}
+
+
+.proyecto:hover img{
+    opacity: 0.5;
+}
+
+.proyecto:hover .info{
+    opacity: 1;
+}
+
+
+.info .icono-contenedor{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.info svg{
+    color:#4e4e4e;
+
+}
+
+
+/* Contacto */
+
+.contacto{
+    background-color: rgb(78, 78, 78);
+
+}
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px ;
+    
+
+}
+
+.contacto .rectangulo{
+    
+    margin-top: -5rem;
+    background-color: #F5874F;
+    border-radius:18px;
+    box-shadow: 0 1px 4px 1px (white);
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contacto a{
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.contacto .description{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: white;
+    font-weight:300;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1em 3em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.contacto button:hover{
+    color: #F5874F;
+    background-color: white;
+}
+
+.contacto button .icono{
+    color: white;
+    font-size: 1.7rem;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* Adaptable responsivo */
+
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display: none;
+       
+    }
+
+    .hero-ppal{
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+    }
+    .hero h2{
+        font-size: 1rem;
+    }
+
+    .sobremi{
+        padding: 2rem 1rem;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+  
+    
+}
